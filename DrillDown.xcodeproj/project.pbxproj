@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		839A655A05DF48B15FB9BC9A /* Pods_Drill_Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740DB41D7EC28EA4AA9ED004 /* Pods_Drill_Down.framework */; };
+		9039DBDE23F4672E0031A5DC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9039DBDD23F4672E0031A5DC /* StoreKit.framework */; };
+		9039DBE023F467ED0031A5DC /* AppStoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DBDF23F467ED0031A5DC /* AppStoreController.swift */; };
+		9039DBE923F4B41E0031A5DC /* ReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DBE823F4B41E0031A5DC /* ReceiptValidator.swift */; };
+		9039DBEB23F4B4440031A5DC /* AppleIncRootCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 9039DBEA23F4B4440031A5DC /* AppleIncRootCertificate.cer */; };
+		9039DBEE23F4B4BA0031A5DC /* pkcs7_union_accessors.c in Sources */ = {isa = PBXBuildFile; fileRef = 9039DBED23F4B4BA0031A5DC /* pkcs7_union_accessors.c */; };
+		9039DC2823F600450031A5DC /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC2723F600450031A5DC /* PurchaseViewController.swift */; };
+		907C834823E390A700B0FFD8 /* EmptyDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C834723E390A700B0FFD8 /* EmptyDropView.swift */; };
+		90D2A53E23D27CD2005F2101 /* TitleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D2A53D23D27CD2005F2101 /* TitleCellView.swift */; };
+		90D2A54023D27E47005F2101 /* PathCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D2A53F23D27E47005F2101 /* PathCellView.swift */; };
+		90D2A54223D286B4005F2101 /* DrillMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D2A54123D286B4005F2101 /* DrillMenuController.swift */; };
+		90D376FD23D233A100A111D0 /* ApplicationPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D376FC23D233A100A111D0 /* ApplicationPreferences.swift */; };
+		90F17A5B23D13B4E00110913 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17A5A23D13B4E00110913 /* AppDelegate.swift */; };
+		90F17A5D23D13B4E00110913 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17A5C23D13B4E00110913 /* PreferencesViewController.swift */; };
+		90F17A5F23D13B5000110913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F17A5E23D13B5000110913 /* Assets.xcassets */; };
+		90F17A6223D13B5000110913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F17A6023D13B5000110913 /* Main.storyboard */; };
+		90F17A7123D13BE600110913 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17A7023D13BE600110913 /* AppDelegate.swift */; };
+		90F17A7323D13BE700110913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F17A7223D13BE700110913 /* Assets.xcassets */; };
+		90F17A7623D13BE700110913 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F17A7423D13BE700110913 /* MainMenu.xib */; };
+		90F17A7F23D13D2100110913 /* Drill Down Launcher.app in Copy Launcher */ = {isa = PBXBuildFile; fileRef = 90F17A6E23D13BE600110913 /* Drill Down Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90F17A9123D2584E00110913 /* DrillMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17A9023D2584E00110913 /* DrillMenuConfiguration.swift */; };
+		90F5F6B623D51E0100D7EDB6 /* TitleStyleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5F6B523D51E0100D7EDB6 /* TitleStyleCellView.swift */; };
+		90F5F6B823D51E1A00D7EDB6 /* MenuIconsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5F6B723D51E1A00D7EDB6 /* MenuIconsCellView.swift */; };
+		90F5F6BA23D51E2500D7EDB6 /* RichIconsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5F6B923D51E2500D7EDB6 /* RichIconsCellView.swift */; };
+		90F5F6BC23D51E3100D7EDB6 /* MenuFontCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5F6BB23D51E3100D7EDB6 /* MenuFontCellView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90F17A7C23D13CFA00110913 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90F17A4F23D13B4E00110913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90F17A6D23D13BE600110913;
+			remoteInfo = Launcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90F17A7E23D13CFE00110913 /* Copy Launcher */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				90F17A7F23D13D2100110913 /* Drill Down Launcher.app in Copy Launcher */,
+			);
+			name = "Copy Launcher";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0FE953337F211B2DF3D1C19F /* Pods-Drill Down.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drill Down.debug.xcconfig"; path = "Target Support Files/Pods-Drill Down/Pods-Drill Down.debug.xcconfig"; sourceTree = "<group>"; };
+		740DB41D7EC28EA4AA9ED004 /* Pods_Drill_Down.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drill_Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9039DBDD23F4672E0031A5DC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9039DBDF23F467ED0031A5DC /* AppStoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreController.swift; sourceTree = "<group>"; };
+		9039DBE423F4866B0031A5DC /* Drill Down-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Drill Down-Bridging-Header.h"; sourceTree = "<group>"; };
+		9039DBE823F4B41E0031A5DC /* ReceiptValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptValidator.swift; sourceTree = "<group>"; };
+		9039DBEA23F4B4440031A5DC /* AppleIncRootCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleIncRootCertificate.cer; sourceTree = "<group>"; };
+		9039DBEC23F4B4BA0031A5DC /* pkcs7_union_accessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7_union_accessors.h; sourceTree = "<group>"; };
+		9039DBED23F4B4BA0031A5DC /* pkcs7_union_accessors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pkcs7_union_accessors.c; sourceTree = "<group>"; };
+		9039DC2723F600450031A5DC /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		907C834723E390A700B0FFD8 /* EmptyDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDropView.swift; sourceTree = "<group>"; };
+		90D2A53D23D27CD2005F2101 /* TitleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCellView.swift; sourceTree = "<group>"; };
+		90D2A53F23D27E47005F2101 /* PathCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathCellView.swift; sourceTree = "<group>"; };
+		90D2A54123D286B4005F2101 /* DrillMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillMenuController.swift; sourceTree = "<group>"; };
+		90D376FC23D233A100A111D0 /* ApplicationPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPreferences.swift; sourceTree = "<group>"; };
+		90F17A5723D13B4E00110913 /* Drill Down.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drill Down.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F17A5A23D13B4E00110913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90F17A5C23D13B4E00110913 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		90F17A5E23D13B5000110913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90F17A6123D13B5000110913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90F17A6323D13B5000110913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F17A6423D13B5000110913 /* DrillDown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DrillDown.entitlements; sourceTree = "<group>"; };
+		90F17A6E23D13BE600110913 /* Drill Down Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drill Down Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F17A7023D13BE600110913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90F17A7223D13BE700110913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90F17A7523D13BE700110913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		90F17A7723D13BE700110913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F17A7823D13BE700110913 /* Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Launcher.entitlements; sourceTree = "<group>"; };
+		90F17A9023D2584E00110913 /* DrillMenuConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillMenuConfiguration.swift; sourceTree = "<group>"; };
+		90F5F6B523D51E0100D7EDB6 /* TitleStyleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleStyleCellView.swift; sourceTree = "<group>"; };
+		90F5F6B723D51E1A00D7EDB6 /* MenuIconsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuIconsCellView.swift; sourceTree = "<group>"; };
+		90F5F6B923D51E2500D7EDB6 /* RichIconsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichIconsCellView.swift; sourceTree = "<group>"; };
+		90F5F6BB23D51E3100D7EDB6 /* MenuFontCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFontCellView.swift; sourceTree = "<group>"; };
+		F526FE4542EA268BE70E89B6 /* Pods-Drill Down.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drill Down.release.xcconfig"; path = "Target Support Files/Pods-Drill Down/Pods-Drill Down.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90F17A5423D13B4E00110913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9039DBDE23F4672E0031A5DC /* StoreKit.framework in Frameworks */,
+				839A655A05DF48B15FB9BC9A /* Pods_Drill_Down.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90F17A6B23D13BE600110913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3828505E000431953C49247A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FE953337F211B2DF3D1C19F /* Pods-Drill Down.debug.xcconfig */,
+				F526FE4542EA268BE70E89B6 /* Pods-Drill Down.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9039DBDC23F4672E0031A5DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9039DBDD23F4672E0031A5DC /* StoreKit.framework */,
+				740DB41D7EC28EA4AA9ED004 /* Pods_Drill_Down.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9039DBEF23F4B5B80031A5DC /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				9039DBDF23F467ED0031A5DC /* AppStoreController.swift */,
+				9039DBE823F4B41E0031A5DC /* ReceiptValidator.swift */,
+				9039DBED23F4B4BA0031A5DC /* pkcs7_union_accessors.c */,
+				9039DBEC23F4B4BA0031A5DC /* pkcs7_union_accessors.h */,
+				9039DBEA23F4B4440031A5DC /* AppleIncRootCertificate.cer */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		90D2A53C23D27CB5005F2101 /* Cell Views */ = {
+			isa = PBXGroup;
+			children = (
+				90D2A53D23D27CD2005F2101 /* TitleCellView.swift */,
+				90D2A53F23D27E47005F2101 /* PathCellView.swift */,
+				90F5F6B523D51E0100D7EDB6 /* TitleStyleCellView.swift */,
+				90F5F6B723D51E1A00D7EDB6 /* MenuIconsCellView.swift */,
+				90F5F6B923D51E2500D7EDB6 /* RichIconsCellView.swift */,
+				90F5F6BB23D51E3100D7EDB6 /* MenuFontCellView.swift */,
+			);
+			path = "Cell Views";
+			sourceTree = "<group>";
+		};
+		90F17A4E23D13B4E00110913 = {
+			isa = PBXGroup;
+			children = (
+				90F17A5923D13B4E00110913 /* DrillDown */,
+				90F17A6F23D13BE600110913 /* Launcher */,
+				90F17A5823D13B4E00110913 /* Products */,
+				9039DBDC23F4672E0031A5DC /* Frameworks */,
+				3828505E000431953C49247A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		90F17A5823D13B4E00110913 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90F17A5723D13B4E00110913 /* Drill Down.app */,
+				90F17A6E23D13BE600110913 /* Drill Down Launcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90F17A5923D13B4E00110913 /* DrillDown */ = {
+			isa = PBXGroup;
+			children = (
+				9039DBEF23F4B5B80031A5DC /* Store */,
+				90F17A5A23D13B4E00110913 /* AppDelegate.swift */,
+				90D376FC23D233A100A111D0 /* ApplicationPreferences.swift */,
+				90F17A5C23D13B4E00110913 /* PreferencesViewController.swift */,
+				9039DC2723F600450031A5DC /* PurchaseViewController.swift */,
+				90D2A53C23D27CB5005F2101 /* Cell Views */,
+				90F17A9023D2584E00110913 /* DrillMenuConfiguration.swift */,
+				90D2A54123D286B4005F2101 /* DrillMenuController.swift */,
+				90F17A6023D13B5000110913 /* Main.storyboard */,
+				90F17A5E23D13B5000110913 /* Assets.xcassets */,
+				90F17A6323D13B5000110913 /* Info.plist */,
+				90F17A6423D13B5000110913 /* DrillDown.entitlements */,
+				907C834723E390A700B0FFD8 /* EmptyDropView.swift */,
+				9039DBE423F4866B0031A5DC /* Drill Down-Bridging-Header.h */,
+			);
+			path = DrillDown;
+			sourceTree = "<group>";
+		};
+		90F17A6F23D13BE600110913 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				90F17A7023D13BE600110913 /* AppDelegate.swift */,
+				90F17A7223D13BE700110913 /* Assets.xcassets */,
+				90F17A7423D13BE700110913 /* MainMenu.xib */,
+				90F17A7723D13BE700110913 /* Info.plist */,
+				90F17A7823D13BE700110913 /* Launcher.entitlements */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90F17A5623D13B4E00110913 /* Drill Down */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90F17A6723D13B5000110913 /* Build configuration list for PBXNativeTarget "Drill Down" */;
+			buildPhases = (
+				CA79930B5C2C91332AAE3282 /* [CP] Check Pods Manifest.lock */,
+				90F17A5323D13B4E00110913 /* Sources */,
+				90F17A5423D13B4E00110913 /* Frameworks */,
+				90F17A5523D13B4E00110913 /* Resources */,
+				90F17A7E23D13CFE00110913 /* Copy Launcher */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90F17A7D23D13CFA00110913 /* PBXTargetDependency */,
+			);
+			name = "Drill Down";
+			productName = DrillDown;
+			productReference = 90F17A5723D13B4E00110913 /* Drill Down.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90F17A6D23D13BE600110913 /* Drill Down Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90F17A7B23D13BE700110913 /* Build configuration list for PBXNativeTarget "Drill Down Launcher" */;
+			buildPhases = (
+				90F17A6A23D13BE600110913 /* Sources */,
+				90F17A6B23D13BE600110913 /* Frameworks */,
+				90F17A6C23D13BE600110913 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drill Down Launcher";
+			productName = Launcher;
+			productReference = 90F17A6E23D13BE600110913 /* Drill Down Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90F17A4F23D13B4E00110913 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Chad Seldomridge";
+				TargetAttributes = {
+					90F17A5623D13B4E00110913 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					90F17A6D23D13BE600110913 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 90F17A5223D13B4E00110913 /* Build configuration list for PBXProject "DrillDown" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90F17A4E23D13B4E00110913;
+			productRefGroup = 90F17A5823D13B4E00110913 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90F17A5623D13B4E00110913 /* Drill Down */,
+				90F17A6D23D13BE600110913 /* Drill Down Launcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90F17A5523D13B4E00110913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F17A5F23D13B5000110913 /* Assets.xcassets in Resources */,
+				9039DBEB23F4B4440031A5DC /* AppleIncRootCertificate.cer in Resources */,
+				90F17A6223D13B5000110913 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90F17A6C23D13BE600110913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F17A7323D13BE700110913 /* Assets.xcassets in Resources */,
+				90F17A7623D13BE700110913 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA79930B5C2C91332AAE3282 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Drill Down-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90F17A5323D13B4E00110913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9039DBE023F467ED0031A5DC /* AppStoreController.swift in Sources */,
+				9039DC2823F600450031A5DC /* PurchaseViewController.swift in Sources */,
+				90F17A5D23D13B4E00110913 /* PreferencesViewController.swift in Sources */,
+				90F5F6BA23D51E2500D7EDB6 /* RichIconsCellView.swift in Sources */,
+				90F5F6B623D51E0100D7EDB6 /* TitleStyleCellView.swift in Sources */,
+				90F17A5B23D13B4E00110913 /* AppDelegate.swift in Sources */,
+				9039DBE923F4B41E0031A5DC /* ReceiptValidator.swift in Sources */,
+				90D2A54223D286B4005F2101 /* DrillMenuController.swift in Sources */,
+				90D2A53E23D27CD2005F2101 /* TitleCellView.swift in Sources */,
+				9039DBEE23F4B4BA0031A5DC /* pkcs7_union_accessors.c in Sources */,
+				90F5F6B823D51E1A00D7EDB6 /* MenuIconsCellView.swift in Sources */,
+				90D2A54023D27E47005F2101 /* PathCellView.swift in Sources */,
+				90F5F6BC23D51E3100D7EDB6 /* MenuFontCellView.swift in Sources */,
+				907C834823E390A700B0FFD8 /* EmptyDropView.swift in Sources */,
+				90F17A9123D2584E00110913 /* DrillMenuConfiguration.swift in Sources */,
+				90D376FD23D233A100A111D0 /* ApplicationPreferences.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90F17A6A23D13BE600110913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F17A7123D13BE600110913 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90F17A7D23D13CFA00110913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90F17A6D23D13BE600110913 /* Drill Down Launcher */;
+			targetProxy = 90F17A7C23D13CFA00110913 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90F17A6023D13B5000110913 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90F17A6123D13B5000110913 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90F17A7423D13BE700110913 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90F17A7523D13BE700110913 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90F17A6523D13B5000110913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90F17A6623D13B5000110913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		90F17A6823D13B5000110913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE953337F211B2DF3D1C19F /* Pods-Drill Down.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DrillDown/DrillDown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1000002;
+				DEVELOPMENT_TEAM = 2WFZT4HWJN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DrillDown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whetstoneapps.drilldown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DrillDown/Drill Down-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		90F17A6923D13B5000110913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F526FE4542EA268BE70E89B6 /* Pods-Drill Down.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DrillDown/DrillDown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1000002;
+				DEVELOPMENT_TEAM = 2WFZT4HWJN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DrillDown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whetstoneapps.drilldown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DrillDown/Drill Down-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		90F17A7923D13BE700110913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Launcher/Launcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1000002;
+				DEVELOPMENT_TEAM = 2WFZT4HWJN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whetstoneapps.drilldown.launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		90F17A7A23D13BE700110913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Launcher/Launcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1000002;
+				DEVELOPMENT_TEAM = 2WFZT4HWJN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whetstoneapps.drilldown.launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90F17A5223D13B4E00110913 /* Build configuration list for PBXProject "DrillDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90F17A6523D13B5000110913 /* Debug */,
+				90F17A6623D13B5000110913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90F17A6723D13B5000110913 /* Build configuration list for PBXNativeTarget "Drill Down" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90F17A6823D13B5000110913 /* Debug */,
+				90F17A6923D13B5000110913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90F17A7B23D13BE700110913 /* Build configuration list for PBXNativeTarget "Drill Down Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90F17A7923D13BE700110913 /* Debug */,
+				90F17A7A23D13BE700110913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90F17A4F23D13B4E00110913 /* Project object */;
+}
